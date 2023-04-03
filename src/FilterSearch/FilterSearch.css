@@ -1,0 +1,46 @@
+.nice-select {
+  position: relative;
+  font-size: 12px;
+  height: 50px;
+  border-right: none;
+  background: transparent;
+  border-radius: 0;
+  padding-right: 18px;
+  padding-left: 30px;
+  border: none;
+}
+
+.header__current {
+  cursor: pointer;
+}
+.header__current > svg {
+  margin-right: 0.5rem;
+}
+
+.header__list-filter {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  padding: 0.5rem 0;
+  background-color: var(--praimery-white-);
+  box-shadow: 0 0 6px -3px;
+  height: 110px;
+  overflow-x: auto;
+  z-index: 33;
+}
+.header__list-filter > li {
+  padding: 0.2rem 0.5rem;
+  transition: all ease 300ms;
+  cursor: pointer;
+}
+.header__list-filter > li:hover {
+  background-color: var(--praimery-back-);
+}
+.selected {
+  background-color: var(--praimery-back-);
+}
+.header-cart-basket {
+  width: 100%;
+}

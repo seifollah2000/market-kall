@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './costum-css/costum.css'
 import { BrowserRouter } from 'react-router-dom';
+import './bootstrap.min.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

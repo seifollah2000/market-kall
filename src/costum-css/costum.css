@@ -127,18 +127,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: vazir;
+  src: url(../font/IRANSans.ttf) format("truetype");
+}
+
+a {
+  color: inherit !important;
+  text-decoration: inherit !important; /* no underline */
+}
 
 :root {
   --praimery-1-: #651fff;
   --praimery-2-: #999999;
   --praimery-3-: #addb5d;
+  --praimery-4-: rgb(53, 0, 169);
   --praimery-back-: #f5f5f5;
   --praimery-white-: #ffffff;
 }
-
+ul {
+  padding: 0 !important;
+}
 body {
-  background-color: var(--praimery-back-);
-
+  background-color: var(--praimery-back-) !important;
+  font-family: "vazir" !important;
   overflow-x: none;
   box-sizing: border-box;
 }
