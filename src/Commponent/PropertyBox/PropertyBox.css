@@ -1,0 +1,19 @@
+.propertyBox__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.propertyBox__item-ritgh > svg {
+  font-size: 2.4rem;
+  margin-left: 0.7rem;
+  color: var(--praimery-1-);
+}
+.propertyBox__item-left-title {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ffc107;
+}
+.propertyBox__item-left-text {
+  font-size: 0.8rem;
+  color: darkgray;
+}

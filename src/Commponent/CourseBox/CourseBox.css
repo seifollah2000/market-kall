@@ -1,0 +1,143 @@
+.productBox__img > img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+  width: 70%;
+}
+.productBox {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  border-radius: 0.8rem !important;
+}
+.productBox__title {
+  font-size: 13px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  letter-spacing: -0.3px;
+  line-height: 25px;
+  padding-top: 40px;
+}
+.productBox__title > span {
+  font-size: 13px;
+  color: #535353;
+  text-decoration: none;
+}
+.productBox__allPrice > span {
+  color: #979898;
+  font-size: 13px;
+  display: block;
+  text-decoration: line-through;
+  width: 100%;
+}
+.ProductBox__price > span {
+  color: #651fff !important;
+  font-size: 16px;
+  height: auto;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.modal__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease;
+  display: flex;
+  height: 95%;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.productBox:hover .modal__box {
+  visibility: visible;
+  opacity: 1;
+}
+.productBox:hover .modal__box > .modal__eye > div {
+  animation-name: shownEye;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.productBox:hover .modal__box > .modal-icon-product > .modal__icon-cart {
+  animation-name: shownCaer;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.productBox:hover .modal__box > .modal-icon-product > .modal__icon-random {
+  animation-name: shownRandom;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.modal__eye {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(255 255 255 / 90%);
+  border-radius: 0.3rem;
+}
+.modal__eye,
+.modal__eye > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modal__eye > div {
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 70px;
+  height: 70px;
+}
+.modal__eye > div > svg {
+  font-size: 2rem;
+  color: black;
+}
+.modal-icon-product {
+  background-color: var(--praimery-white-);
+  width: 100%;
+  height: 80px;
+}
+.modal-icon-product > div {
+  margin: 0 0.4rem;
+}
+.modal-icon-product > div > svg {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+  color: black;
+}
+.popular_red > svg {
+  color: red !important;
+}
+/* animaition */
+@keyframes shownEye {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes shownCaer {
+  from {
+    transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes shownRandom {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

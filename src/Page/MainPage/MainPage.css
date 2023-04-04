@@ -26,6 +26,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  border-radius: 1rem;
 
   /* Center slide text vertically */
   display: flex;
@@ -57,5 +58,146 @@ body {
   background-color: var(--praimery-2-) !important;
   color: var(--praimery-1-) !important;
   border: 2px solid var(--praimery-1-) !important;
+  transition: all 300ms ease !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  box-shadow: 0 0 15px 10px var(--praimery-1-) !important;
 }
 /* ! finish css slider */
+.main-page {
+  margin-top: 5rem;
+}
+.carousel-item {
+  border-radius: 1rem !important;
+  background-image: url("../../../public/img/landing/Huawei-P20-Pro.jpg");
+}
+.landing_slider > .swiper {
+  border-radius: 2rem;
+}
+.carousel-caption {
+  text-align: start !important;
+}
+.slider__footer {
+  overflow: hidden;
+  max-width: fit-content;
+  width: -webkit-fill-available;
+  border-radius: 2rem;
+  filter: drop-shadow(2px 4px 6px rgb(154, 154, 154));
+}
+.slider__footer > a > img {
+  width: 100%;
+}
+.product__allMain {
+  overflow: hidden;
+  padding: 1rem;
+  background-color: var(--praimery-white-);
+  box-shadow: 0 0 10px 1px rgb(169, 168, 168);
+  border-radius: 2rem;
+}
+/* ! Precent */
+
+.percent {
+  background-color: #e62e58;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.2rem;
+}
+.precent__img > img {
+  width: 90%;
+}
+.precent__img > h6 {
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.precent__img > button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.26);
+  padding: 9px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+}
+/* ! Percent */
+/* !percent box */
+.percent_box {
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.percent_item {
+  margin: auto;
+}
+.percent_item > img {
+  border-radius: 1rem;
+  margin: auto;
+  cursor: pointer;
+  width: 90%;
+}
+/* ? buy_precent */
+.buy_precent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buy_precent-right > div,
+.buy_precent-left > div {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 !important;
+  border-radius: 2rem;
+  height: 300px;
+}
+
+.buy_precent-right-des,
+.buy_precent-left-des {
+  position: absolute;
+  width: 100%;
+  background-color: #19191a94;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.buy_precent-right-img > img,
+.buy_precent-left-img > img {
+  transition: all 300ms ease;
+}
+
+.buy_precent-left-des-title,
+.buy_precent-right-des-title {
+  color: var(--praimery-white-);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.buy_precent-right-des-text,
+.buy_precent-left-des-text {
+  color: var(--praimery-white-);
+  font-size: 1rem;
+  margin: 1rem 0 !important;
+}
+.buy_precent-right-des-btn,
+.buy_precent-left-des-btn {
+  background-color: #ffc107;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  color: var(--praimery-white-);
+  border: none;
+}
+.buy_precent-right:hover div > .buy_precent-right-img > img,
+.buy_precent-left:hover div > .buy_precent-left-img > img {
+  transform: scale(1.4);
+}

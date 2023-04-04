@@ -1,0 +1,22 @@
+.precent_timer {
+  justify-content: center;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.percent_time {
+  margin: 0 0.3rem;
+}
+.percent_time > h6 {
+  border-radius: 50%;
+  border: 1px dashed rgb(128, 128, 128);
+  font-size: 0.7rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.percent_time > span {
+  font-size: 0.7rem;
+  color: darkgrey;
+}

@@ -1,0 +1,13 @@
+.FastAccess__box-body {
+  display: flex;
+  flex-direction: column;
+}
+.FastAccess__box-head {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+.FastAccess__box-body > a {
+  font-size: 0.8rem;
+  color: #363735;
+}
