@@ -1,0 +1,24 @@
+.PointsProduct_item-title {
+  display: block;
+  color: #666;
+  font-size: 13px;
+}
+.good_points {
+  background-color: var(--praimery-1-);
+}
+.bad_points {
+  background-color: #ff5153;
+}
+.bad_points,
+.good_points {
+  margin-left: 5px;
+  font-size: 16px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--praimery-white-);
+  border-radius: 50%;
+  vertical-align: middle;
+}

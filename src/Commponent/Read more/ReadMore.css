@@ -1,0 +1,48 @@
+.product__description-criticism-head-title {
+  padding-bottom: 15px;
+  color: #525252;
+  font-size: 25px;
+}
+.product__description-criticism-head-para {
+  max-height: 250px;
+  height: unset;
+  overflow: hidden;
+  padding-bottom: 15px;
+  font-size: 14px;
+  color: #777777;
+  line-height: 30px;
+  padding: 0 1rem;
+  text-align: justify;
+  transition: all 300ms ease;
+}
+
+.product__description-criticism-head-btn {
+  background-color: var(--praimery-white-);
+  color: var(--praimery-1-);
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  position: relative;
+  outline: none;
+  transition: all 300ms ease;
+}
+.filterInShownReadMore::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  opacity: 1;
+  bottom: 40px;
+  height: 105px;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 98.8%, 0.99) 99%,
+    #fcfcfc
+  );
+}
+.shownReadMore {
+  max-height: fit-content !important;
+  transition: all 400ms ease;
+}

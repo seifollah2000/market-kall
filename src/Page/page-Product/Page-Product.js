@@ -17,8 +17,13 @@ import { GiConcentrationOrb } from 'react-icons/gi'
 import { BsFillTagsFill } from 'react-icons/bs'
 import BoxProduct from '../../Commponent/BoxProduct/BoxProduct'
 import PropertyBox from '../../Commponent/PropertyBox/PropertyBox'
+import ProductDescription from '../../Commponent/ProductDescription/ProductDescription'
+
+
 
 export default function PageProduct() {
+
+
     return (
         <>
             <Header />
@@ -46,7 +51,7 @@ export default function PageProduct() {
                             <MdOutlineCompare />
                         </GalleryActions>
                     </div>
-                    <div className="product__info-informaition">
+                    <div className="product__info-informaition py-3">
                         <div className="product__info-body-rigth col-md-5">
                             <ShownProductImg />
                         </div>
@@ -130,11 +135,39 @@ export default function PageProduct() {
                             </div>
                         </div>
                     </div>
-                    <div className="product__info-footer">
-                        <PropertyBox title='امکان تحویل' text='اکسپرس'>
+                    <div className="product__info-footer d-flex align-items-center justify-content-evenly">
 
+
+                        <PropertyBox title='امکان تحویل' text='اکسپرس'>
+                            <img src="/img/icon/delivery.svg" alt="kalamarket" />
                         </PropertyBox>
+
+
+
+                        <PropertyBox title='۷ روز هفته' text='۲۴ ساعته'>
+                            <img src="/img/icon/contact-us.svg" alt="kalamarket" />
+                        </PropertyBox>
+
+                        <PropertyBox title='امکان ' text='  پرداخت در محل'>
+                            <img src="/img/icon/payment-terms.svg" alt="kalamarket" />
+                        </PropertyBox>
+
+
+                        <PropertyBox title='هفت روز ضمانت بازگشت ' text='کالا'>
+                            <img src="/img/icon/return-policy.svg" alt="kalamarket" />
+                        </PropertyBox>
+
+
+                        <PropertyBox title='ضمانت' text='اصل بودن کالا'>
+                            <img src="/img/icon/origin-guarantee.svg" alt="kalamarket" />
+                        </PropertyBox>
+
                     </div>
+
+                </div>
+                <div className="product__description py-5">
+                    <ProductDescription />
+
                 </div>
             </div>
             <Footer />

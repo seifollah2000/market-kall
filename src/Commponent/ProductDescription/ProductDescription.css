@@ -1,0 +1,142 @@
+.css-heg063-MuiTabs-flexContainer {
+  justify-content: center !important;
+}
+.QuestionsAndAnswers,
+.product__description-item {
+  background-color: var(--praimery-white-);
+  border-radius: 1rem;
+  font-family: "vazir";
+  padding: 2rem 1rem;
+}
+.comments-evaluation-negative-good > span,
+.comments-evaluation-negative-bad > span,
+.points__product-good > h6,
+.points__product-bad > h6 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 700;
+}
+.comments-evaluation-positive > span,
+.points__product-good > h6 {
+  color: var(--praimery-1-);
+}
+.comments-evaluation-negative > span,
+.points__product-bad > h6 {
+  color: #ff5153;
+}
+/* specifications */
+.specifications {
+  padding-bottom: 15px;
+  color: #525252;
+  font-size: 25px;
+}
+.Specifications-title > h6 {
+  display: block;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #999;
+}
+/* scoreUsersTo */
+.scoreUsersTo__rigth {
+  background-color: var(--praimery-back-);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.scoreUsersTo__left-title {
+  font-size: 1rem;
+  color: #666;
+}
+.scoreUsersTo__left-paragraph {
+  color: #777;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.scoreUsersTo__left-btn {
+  font-size: 0.9rem;
+  background-color: #ffc107;
+  color: var(--praimery-white-);
+  border-radius: 1rem;
+  border: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+}
+.comment-text-header-title {
+  color: #999999;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.comment-text-header-star > p {
+  font-size: 12px;
+  color: #999999;
+
+  margin-top: 15px;
+}
+.product-rate > svg {
+  color: #ffc107;
+}
+.comments-evaluation-footer {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.692;
+}
+.js-comment-like-footer,
+.js-comment-dislike-footer {
+  border-radius: 20px;
+  background: #f1f1f1;
+  padding: 2px 13px 3px 4px;
+  color: #8c8c8c;
+  font-size: 13px;
+  line-height: 1.692;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.js-comment-like-footer > span,
+.js-comment-dislike-footer > span {
+  font-size: 13px;
+  opacity: 0.8;
+  height: 20px;
+  min-width: 20px;
+  padding: 0 5px;
+  line-height: 20px;
+  background: #ddd;
+  color: #666;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.QuestionsAndAnswers__body > textarea {
+  height: 180px;
+  border: 1px solid #efefef;
+  border-radius: 20px;
+  outline: none;
+  padding: 15px;
+  background: #f9f9f9;
+  color: #424242;
+  width: 100%;
+  resize: vertical;
+  vertical-align: top;
+  min-height: 56px;
+  font-size: 12px;
+  line-height: 2.58;
+}
+.MuiTypography-root
+  .MuiTypography-body1
+  .MuiFormControlLabel-label
+  .css-ahj2mt-MuiTypography-root {
+  font-family: "vazir" !important;
+  font-size: 0.8rem !important;
+  color: #777;
+}
+.QuestionsAndAnswers__body-btn > button {
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: var(--praimery-white-);
+  background-color: #ffc107;
+  border: none;
+  outline: none;
+}

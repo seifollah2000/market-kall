@@ -1,0 +1,71 @@
+.is-question {
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 15px;
+  padding: 1.4rem;
+  box-shadow: 0px 1px 4px rgba(126, 142, 177, 0.2);
+  margin-top: 30px;
+  position: relative;
+  background: #fbfbfb;
+}
+.answer-questions {
+  width: 95%;
+  margin-right: auto;
+}
+.faq-header {
+  padding-top: 0;
+  width: 100%;
+  margin-left: 44px;
+  display: block;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 10px;
+}
+.icon-faq {
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background-image: linear-gradient(135deg, #fdf1a4 10%, #e0c300 100%);
+  line-height: 45px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 auto 20px;
+  position: absolute;
+  top: -21px;
+  right: -14px;
+}
+.is-question-body {
+  display: block;
+}
+.is-question-footer > * {
+  width: fit-content;
+}
+.is-question-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.icon-faq-type {
+  font-size: 1.3rem !important;
+  color: #aaa;
+}
+.icon-faq-user {
+  font-size: 0.9rem !important;
+}
+.is-question-body > p {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 2;
+  color: #6f6f6f;
+}
+.is-question-footer > span {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+.js-add-answer-btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+  color: var(--praimery-4-) !important;
+}

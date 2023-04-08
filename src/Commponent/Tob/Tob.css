@@ -1,0 +1,11 @@
+.tob-item {
+  font-weight: 700;
+  font-family: "vazir";
+}
+.tob-item > svg {
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
+.tob-item > span {
+  font-size: 0.9rem;
+}

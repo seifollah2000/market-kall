@@ -1,0 +1,32 @@
+.comments-user-shopping {
+  background-color: var(--praimery-back-);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.comments-user-shopping-nameUser {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+.cell-date {
+  align-items: center;
+  font-size: 11px;
+  line-height: 1.692;
+  color: #777;
+  margin: 15px 0 5px;
+}
+.message-light > svg {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+.message-light {
+  font-size: 12px;
+  line-height: 2.23;
+  background-color: #f5f1ff;
+  border: 1px solid #d4c2f7;
+  border-radius: 20px;
+  margin: 40px 0 5px;
+  color: #651fff;
+  padding: 5px 40px 5px 12px;
+  position: relative;
+}

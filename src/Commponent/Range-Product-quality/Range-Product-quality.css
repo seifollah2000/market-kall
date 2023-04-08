@@ -1,0 +1,20 @@
+.scoreUsersTo__rigth-item {
+  margin: 1rem 0;
+}
+.scoreUsersTo__rigth-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #777;
+  margin: 0.3rem 0;
+}
+.scoreUsersTo__rigth-range {
+  height: 5px;
+}
+.progress {
+  height: inherit !important;
+}
+.progress-bar {
+  background-color: var(--praimery-1-) !important;
+}
