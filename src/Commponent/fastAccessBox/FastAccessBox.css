@@ -9,5 +9,13 @@
 }
 .FastAccess__box-body > a {
   font-size: 0.8rem;
-  color: #363735;
+  color: #363735 !important;
+  margin: 0.3rem 0.4rem;
+}
+/* responsive */
+
+@media screen and (max-width: 440px) {
+  .FastAccess__box {
+    width: 100% !important;
+  }
 }

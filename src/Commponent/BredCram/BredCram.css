@@ -1,0 +1,22 @@
+.bredcram {
+  font-size: 0.9rem;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+.bredcram > svg {
+  color: black;
+}
+.bredcram__home {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.bredcram__home > svg {
+  font-size: 1.7rem;
+  margin-left: 0.5rem;
+}
+.bredcram__item {
+  margin: 0 0.4rem;
+}

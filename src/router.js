@@ -26,7 +26,8 @@ import Search from "./Page/search/Search"
 import welcom from "./Page/wellcom/Welcom"
 
 const routers = [
-    { path: '/', element: <MainPage /> }
+    { path: '/', element: <MainPage /> },
+    { path: '/product-info/:name', element: <PageProduct /> }
 
 ]
 

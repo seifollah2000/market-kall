@@ -46,24 +46,24 @@ body {
   background-color: var(--praimery-1-) !important;
   transition: all 500ms ease !important;
 }
-.swiper-button-prev,
-.swiper-button-next {
-  display: flex;
-  border-radius: 50% !important;
-  align-items: center;
-  width: 60px !important;
-  height: 60px !important;
-  justify-content: center;
-  padding: 1rem !important;
-  background-color: var(--praimery-2-) !important;
-  color: var(--praimery-1-) !important;
-  border: 2px solid var(--praimery-1-) !important;
-  transition: all 300ms ease !important;
+
+.carousel-item {
+  margin-right: 0 !important;
+  cursor: pointer;
 }
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  box-shadow: 0 0 15px 10px var(--praimery-1-) !important;
+/* responsive */
+@media screen and (max-width: 1000px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 1.2rem !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
+
 /* ! finish css slider */
 .main-page {
   margin-top: 5rem;
@@ -104,6 +104,8 @@ body {
   align-items: center;
   justify-content: space-between;
   border-radius: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .precent__img > img {
   width: 90%;
@@ -200,4 +202,32 @@ body {
 .buy_precent-right:hover div > .buy_precent-right-img > img,
 .buy_precent-left:hover div > .buy_precent-left-img > img {
   transform: scale(1.4);
+}
+/* ! responsive */
+@media screen and (max-width: 768px) {
+  .slider__footer {
+    display: none !important;
+  }
+  .precent__img {
+    padding: 1rem 0;
+  }
+  .precent__img > img {
+    display: none;
+  }
+  .precent__img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .precent__img > button {
+    width: fit-content;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .precent__img > button,
+  .precent__img > h6 {
+    font-size: 1rem !important;
+  }
 }

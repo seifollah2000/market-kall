@@ -1,0 +1,41 @@
+.gallery__action {
+  background-color: var(--praimery-back-);
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 9px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  float: right;
+  transition: 0.2s;
+  font-weight: 500;
+  transition: all 500ms ease;
+  margin: 0 0.4rem;
+}
+.gallery__action:hover {
+  background-color: #fb6262;
+  color: var(--praimery-white-);
+}
+.gallery__action:hover .gallery__action-icon > svg,
+.gallery__action:hover .gallery__action-title {
+  color: var(--praimery-white-);
+}
+.gallery__action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__action-icon > svg {
+  font-size: 1.5rem;
+}
+.gallery__action-title,
+.gallery__action-icon {
+  color: #818181;
+}
+
+.gallery__action-title {
+  font-size: 0.6rem;
+  margin: 0.5rem 0;
+}

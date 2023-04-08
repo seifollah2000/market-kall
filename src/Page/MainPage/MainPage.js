@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './MainPage.css'
 import Header from '../../Commponent/Header/Header'
 import Footer from '../../Commponent/Footer/Footer'
@@ -9,12 +9,14 @@ import IncludingItem from '../../Commponent/IncludingItem/IncludingItem';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 // import required modules
 import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 import CourseBox from '../../Commponent/CourseBox/CourseBox';
 
 export default function MainPage() {
+
     return (
         <>
             <Header />
@@ -28,10 +30,11 @@ export default function MainPage() {
                             delay: 4400,
                             disableOnInteraction: false,
                         }}
+                        loop={true}
                         pagination={{
                             clickable: true,
                         }}
-                        navigation={true}
+                        navigation={false}
                         modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
@@ -70,7 +73,7 @@ export default function MainPage() {
                 </div>
                 <div className='slider__footer'>
                     <a href="#">
-                        <img src="/img/a-8.jpg" alt="kala market" />
+                        <img className='img-fluid' src="/img/a-8.jpg" alt="kala market" />
                     </a>
                 </div>
                 <div className='product__allMain mt-3'>
@@ -83,12 +86,12 @@ export default function MainPage() {
                     </IncludingItem>
                 </div>
                 <div className='percent row mt-3'>
-                    <div className='precent__img col-3'>
+                    <div className='precent__img col-12 col-md-3'>
                         <img src="https://theme-persian.ir/kalamarket/demo/template/assets/images/slider-amazing/shopping-cart.svg" alt="" />
                         <h6>محصولات شگفت انگیز</h6>
                         <button>مشاهده همه</button>
                     </div>
-                    <div className="col-9 precent__products">
+                    <div className="col-12 col-md-9  precent__products">
                         <Swiper
                             slidesPerView={3}
                             spaceBetween={20}
@@ -136,16 +139,16 @@ export default function MainPage() {
                     </div>
                 </div>
                 <div className="percent_box d-flex mt-3">
-                    <div className="percent_item col-lg-3 col-md-5">
+                    <div className="percent_item col-lg-3 col-sm-5 text-center py-3 ">
                         <img src="/img/percent/a-4.jpg" className='img-fluid' alt="kala market" />
                     </div>
-                    <div className="percent_item col-lg-3 col-md-5">
+                    <div className="percent_item col-lg-3 col-sm-5 text-center py-3 ">
                         <img src="/img/percent/a-5.jpg" className='img-fluid' alt="kala market" />
                     </div>
-                    <div className="percent_item col-lg-3 col-md-5">
+                    <div className="percent_item col-lg-3 col-sm-5 text-center py-3 ">
                         <img src="/img/percent/a-6.jpg" className='img-fluid' alt="kala market" />
                     </div>
-                    <div className="percent_item col-lg-3 col-md-5">
+                    <div className="percent_item col-lg-3 col-sm-5 text-center py-3 ">
                         <img src="/img/percent/a-7.jpg" className='img-fluid' alt="kala market" />
                     </div>
                 </div>
@@ -158,7 +161,7 @@ export default function MainPage() {
                         <SwiperSlide> <CourseBox title="سامسونگ گلکسی اس 10 پلاس – 128 گیگابایت – دو سیم کارت" price="10500000" priceOrginal="11990000" cover="/img/popular/Samsung-S10Plus.jpg" /></SwiperSlide>
                     </IncludingItem>
                     <div className='slider__footer my-5'>
-                        <img src="/img/percent/a-12.jpg" alt="kala market" />
+                        <img className='img-fluid' src="/img/percent/a-12.jpg" alt="kala market" />
                     </div>
                     <IncludingItem title="کامپبوتر و لپ تاپ">
                         <SwiperSlide> <CourseBox title=" دوربین دیجیتال سامسونگ مدل ST150F" price="2500000" priceOrginal="3200000" cover="/img/popular/camera-samsung.jpg" /></SwiperSlide>
@@ -169,7 +172,7 @@ export default function MainPage() {
                     </IncludingItem>
                 </div>
                 <div className="buy_precent row my-3">
-                    <div className="buy_precent-right col-md-6">
+                    <div className="buy_precent-right col-md-6 py-3">
                         <div>
 
                             <div className="buy_precent-right-img">
@@ -182,7 +185,7 @@ export default function MainPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="buy_precent-left col-md-6">
+                    <div className="buy_precent-left col-md-6 py-3">
                         <div>
 
                             <div className="buy_precent-left-img">

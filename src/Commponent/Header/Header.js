@@ -865,7 +865,7 @@ export default function Header() {
                                                     <ul className="product-list-widget">
                                                         <li className='mini-cart-item'>
                                                             <div className='mini-cart-item_img'>
-                                                                <img src="./img/buy/img-card-2.jpg" alt="kala market" />
+                                                                <img src="/img/buy/img-card-2.jpg" alt="kala market" />
                                                                 <span className='close_product'><i className='fas fa-close'></i></span>
                                                             </div>
                                                             <div className='mini-cart-item_infor'>
@@ -884,7 +884,7 @@ export default function Header() {
                                                         </li>
                                                         <li className='mini-cart-item'>
                                                             <div className='mini-cart-item_img'>
-                                                                <img src="./img/buy/img-card.jpg" alt="kala market" />
+                                                                <img src="/img/buy/img-card.jpg" alt="kala market" />
                                                                 <span className='close_product'><i className='fas fa-close'></i></span>
                                                             </div>
                                                             <div className='mini-cart-item_infor'>

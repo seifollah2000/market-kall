@@ -1,0 +1,111 @@
+.gototop {
+  position: fixed;
+  left: 84px;
+  bottom: 20%;
+  background-color: var(--praimery-white-);
+  border: 2px solid var(--praimery-1-);
+  width: 60px;
+  z-index: 999;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  display: none;
+}
+.ntGototop {
+  display: flex !important;
+  animation-name: shown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.falseGoToTop {
+  animation-name: inshown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.gototop > svg {
+  color: #999;
+  font-size: 2rem;
+  animation-name: moves;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.gototop:hover svg {
+  color: #ffc107;
+}
+.gototop,
+.gototop > svg {
+  transition: all 300ms ease;
+}
+@keyframes moves {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(0.8px);
+  }
+  20% {
+    transform: translateY(1.5px);
+  }
+  30% {
+    transform: translateY(1.8px);
+  }
+  40% {
+    transform: translateY(2.4px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  60% {
+    transform: translateY(2.4px);
+  }
+  70% {
+    transform: translateY(1.8px);
+  }
+  80% {
+    transform: translateY(1.5px);
+  }
+  90% {
+    transform: translateY(0.8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes inshown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .gototop {
+    width: 50px;
+    height: 50px;
+    left: 39px;
+    bottom: 16%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gototop {
+    left: 54px;
+    bottom: 14%;
+  }
+}

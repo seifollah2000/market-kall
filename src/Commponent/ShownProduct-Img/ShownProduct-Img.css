@@ -1,0 +1,104 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product__info-body-rigth-img-shown-items > div > .swiper-button-next,
+.product__info-body-rigth-img-shown-items > div > .swiper-button-prev {
+  position: absolute;
+  bottom: 25px;
+  color: #6e6d6d;
+  box-shadow: 1.5px 0 4px 0 rgba(0, 0, 0, 0.15);
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 60px;
+  background: #fff;
+  color: #666;
+  pointer-events: all;
+  border-radius: 20px;
+  transition: 0.2s;
+  outline: none;
+}
+.product__info-body-rigth-img-shown-items > div > .swiper-button-next::after,
+.product__info-body-rigth-img-shown-items > div > .swiper-button-prev::after {
+  font-size: 1.4rem !important;
+}
+/* end swiper */
+.product__info-body-rigth-img-shown {
+  position: relative;
+}
+.product__info-body-rigth-img-shown-orginal {
+  margin: 1rem 0;
+  cursor: crosshair;
+}
+.product__info-body-rigth-img-shown-zoom {
+  position: absolute;
+  border: 1px solid rgb(154, 153, 153);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  top: 0;
+  width: 90%;
+  margin: auto;
+  height: 76%;
+  pointer-events: none;
+  transition: all 300ms ease;
+  visibility: hidden;
+  border-radius: 1rem;
+  opacity: 0;
+  background-color: var(--praimery-white-);
+}
+.product__info-body-rigth-img-shown-orginal:hover
+  + .product__info-body-rigth-img-shown-zoom {
+  visibility: visible;
+  opacity: 1;
+}
+.product__info-body-rigth-img-shown-zoom > img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.5);
+}
+.product__info-body-rigth-img-shown-orginal > img {
+  width: 80%;
+  margin: auto;
+}
+.product__info-body-rigth-img-shown-item {
+  cursor: pointer;
+  transition: all 300ms ease;
+}

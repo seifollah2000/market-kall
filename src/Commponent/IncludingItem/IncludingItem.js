@@ -18,7 +18,7 @@ export default function IncludingItem({ children, title }) {
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
-
+                loop={true}
                 freeMode={true}
                 pagination={{
                     clickable: true,

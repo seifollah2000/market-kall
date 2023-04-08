@@ -2,7 +2,7 @@ import React, { Children } from 'react'
 import './PropertyBox.css'
 export default function PropertyBox({ children, title, text }) {
     return (
-        <div className='propertyBox__item'>
+        <div className='propertyBox__item py-3 py-md-2'>
             <div className='propertyBox__item-ritgh'>
                 {children}
             </div>

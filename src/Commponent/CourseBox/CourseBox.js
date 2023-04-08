@@ -4,7 +4,6 @@ export default function CourseBox({ title, price, priceOrginal, cover, children 
     const iconHeart = useRef()
     const addPopular = () => {
         iconHeart.current.classList.toggle("popular_red")
-        console.log(iconHeart.current)
     }
     return (
         <div className='productBox'>

@@ -128,8 +128,10 @@ table {
   border-spacing: 0;
 }
 @font-face {
-  font-family: vazir;
+  font-family: "vazir";
   src: url(../font/IRANSans.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {

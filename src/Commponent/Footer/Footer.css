@@ -11,21 +11,40 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 .fastAccess__rigth {
   display: flex;
   align-items: start;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+.information {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.information__text {
+  padding-right: 0.6rem;
 }
 .information__text > h6,
 .fastAccess__left-title {
-  font-size: 14px;
-  line-height: 1.571;
   font-weight: 400;
   color: #777;
   margin-bottom: 20px;
-  display: block;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+.footer__end,
+.information__text > p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #888;
+  margin: 0;
+}
+.footer__end {
+  border-top: 1px solid #00000042;
+  padding-top: 0.5rem;
 }
 .fastAccess__left-body {
   display: flex;
